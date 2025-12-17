@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace FlightReservationApp_1.FlightMaintenanceApp
+namespace FlightReservationApp_1.FlightMaintenanceApp.CreateFlight
 {
     public static class CreateFlightParser
     {
@@ -27,7 +27,8 @@ namespace FlightReservationApp_1.FlightMaintenanceApp
                 return false;
             }
 
-            value = s; return true;
+            value = s; 
+            return true;
         }
 
         public static bool TryParseFlightNumber(string input, out int value)

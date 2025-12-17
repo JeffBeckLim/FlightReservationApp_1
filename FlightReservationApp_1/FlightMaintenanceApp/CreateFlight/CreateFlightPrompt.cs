@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FlightReservationApp_1.FlightMaintenanceApp
+namespace FlightReservationApp_1.FlightMaintenanceApp.CreateFlight
 {
     public static class CreateFlightPrompt
     {

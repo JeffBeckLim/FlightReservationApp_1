@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="FlightReservationApp_1/FlightReservationApp_1.csproj" />
+  <Project Path="FlightReservationApp_1Tests/FlightReservationApp_1Tests.csproj" Id="b3164e55-1072-4f44-9d59-5296cdd183e0" />
 </Solution>

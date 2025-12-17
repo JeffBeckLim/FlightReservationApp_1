@@ -13,11 +13,11 @@ namespace FlightReservationApp_1.Infrastructure
             //Directory.CreateDirectory(Path.GetDirectoryName(_file)!);
             var line = string.Join("|", new[]
             {
-                flight.AirlineCode,
-                flight.FlightNumber.ToString(),
-                flight.DepartureStation,
-                flight.ArrivalStation,
-                flight.Std.ToString(),
+                flight.AirlineCode.ToUpper(),       // PR, 5J, G3, TAM, A4C, BC3 
+                flight.FlightNumber.ToString(),    
+                flight.DepartureStation.ToUpper(),  //  MNL, NRT, AB3, B2C
+                flight.ArrivalStation.ToUpper(),    // "        " 
+                flight.Std.ToString(),  
                 flight.Sta.ToString()
             }); 
             File.AppendAllText(file, line + Environment.NewLine);

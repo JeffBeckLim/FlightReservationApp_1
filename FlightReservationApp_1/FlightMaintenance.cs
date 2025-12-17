@@ -1,4 +1,6 @@
 ﻿using FlightReservationApp_1.FlightMaintenanceApp;
+using FlightReservationApp_1.FlightMaintenanceApp.CreateFlight;
+using FlightReservationApp_1.FlightMaintenanceApp.SearchFlight;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,8 +10,15 @@ namespace FlightReservationApp_1
     public class FlightMaintenance
     {
         private readonly CreateFlight _createFlight = new CreateFlight();
-        private readonly SearchFlight _searchFlight= new SearchFlight();
-        private readonly ViewAllFlights _viewAllFlights= new ViewAllFlights();
+        private readonly SearchFlightPrompt _searchFlightPrompt = new SearchFlightPrompt();
+        private readonly SearchFlight _searchFlight;
+        private readonly ViewAllFlights _viewAllFlights = new ViewAllFlights();
+
+        public FlightMaintenance()
+        {
+            _searchFlight = new SearchFlight(_searchFlightPrompt);
+        }
+
         public void Run()
         {
 

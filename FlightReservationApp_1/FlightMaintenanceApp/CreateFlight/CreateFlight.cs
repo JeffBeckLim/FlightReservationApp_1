@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace FlightReservationApp_1.FlightMaintenanceApp
+namespace FlightReservationApp_1.FlightMaintenanceApp.CreateFlight
 {
     public class CreateFlight
     {
